@@ -52,7 +52,7 @@ public class HandLogic : MonoBehaviour
     {
         inHand = collidingObject;
         if (!inHand) return;
-        inHand.transform.SetParent(this.transform);
+        inHand.transform.SetParent(transform);
         inHand.GetComponent<Rigidbody>().isKinematic = true;
     }
 
