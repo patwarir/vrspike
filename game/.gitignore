@@ -7,7 +7,6 @@ Library
 Temp
 Build
 Library/
-Packages/
 obj/
 
 # ===================================== #
