@@ -1,9 +1,7 @@
-import express from "express";
-
-let app = express();
+let app = require("express")();
 
 app.get("/", (req, res) => {
-    res.send("Hello, World!");
+  res.send("Hello, World!");
 });
 
-app.listen(3000, () => console.log("Server started..."));
+app.listen(process.env.PORT || 3000, () => console.log("Server started..."));
