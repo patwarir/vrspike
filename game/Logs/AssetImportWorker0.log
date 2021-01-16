@@ -803,3 +803,62 @@ System memory in use after: 194.5 MB.
 Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3392.
 Total: 10.475479 ms (FindLiveObjects: 0.515796 ms CreateObjectMapping: 0.286686 ms MarkObjects: 4.114708 ms  DeleteObjects: 5.556610 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 916.285478 seconds.
+  path: Assets/XR
+  artifactKey: Guid(d5ea5120a900141efbbe1ec200c1eb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR using Guid(d5ea5120a900141efbbe1ec200c1eb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cacbdebf4718db6d81128f71abbcac') in 0.017790 seconds
+  Import took 0.053924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.369856 seconds.
+  path: Assets/XR/Settings
+  artifactKey: Guid(86283adf324054c7f96e748cf833443d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Settings using Guid(86283adf324054c7f96e748cf833443d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc11917a0cc6c32c9398700b06990db7') in 0.004353 seconds
+  Import took 0.018005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069073 seconds.
+  path: Assets/XR/Settings/AR Core Settings.asset
+  artifactKey: Guid(e91db79e7a2fc4dbd9fca7d37baac325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Settings/AR Core Settings.asset using Guid(e91db79e7a2fc4dbd9fca7d37baac325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295e28355d8a4c0f20c2093f90f369c1') in 0.044498 seconds
+  Import took 0.050599 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005046 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@2.5.1/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@2.5.1/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@2.5.1/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.653 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2880 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 262.0 MB.
+System memory in use after: 256.8 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3395.
+Total: 8.207633 ms (FindLiveObjects: 0.718500 ms CreateObjectMapping: 0.187223 ms MarkObjects: 2.166157 ms  DeleteObjects: 5.132122 ms)
+
