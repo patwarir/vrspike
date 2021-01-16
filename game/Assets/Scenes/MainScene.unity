@@ -1251,7 +1251,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-<<<<<<< HEAD
 --- !u!1 &2129028180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1294,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
+
 --- !u!1001 &1997990232796613726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1365,7 +1364,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c30bcc8dc31df4896a6168cdf54381bf, type: 3}
->>>>>>> 89691988f04e7e977d58c03d88ee29d01dc70d73
 --- !u!1001 &9131320461635804753
 PrefabInstance:
   m_ObjectHideFlags: 0
