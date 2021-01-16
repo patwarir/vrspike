@@ -1,0 +1,128 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/sriharivishnu/UnityProjects/SampleProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62009
+Successfully changed project path to: /Users/sriharivishnu/UnityProjects/SampleProject
+/Users/sriharivishnu/UnityProjects/SampleProject
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 74.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sriharivishnu/UnityProjects/SampleProject/Assets
+GfxDevice: creating device client; threaded=0
+2021-01-15 23:48:49.785 Unity[85594:3147102] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-01-15 23:48:49.785 Unity[85594:3147102] Metal devices available: 1
+2021-01-15 23:48:49.785 Unity[85594:3147102] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-01-15 23:48:49.785 Unity[85594:3147102] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56594
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001775 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 85.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.501 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009790 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 85.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.001 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 206.9 MB.
+System memory in use after: 206.4 MB.
+
+Unloading 419 unused Assets to reduce memory usage. Loaded Objects now: 3213.
+Total: 3.816076 ms (FindLiveObjects: 0.450402 ms CreateObjectMapping: 0.159291 ms MarkObjects: 2.545031 ms  DeleteObjects: 0.660110 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Microsoft.Maps.Unity.Examples/MapServicesExample/MapServiceExample.unity
+  artifactKey: Guid(d38d849ca281b6c419f19339d512b765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples/MapServicesExample/MapServiceExample.unity using Guid(d38d849ca281b6c419f19339d512b765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e60a7f3cf4ce627de42979c8353ba8d') in 0.016477 seconds
+  Import took 0.022391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Microsoft.Maps.Unity.Examples/Icon.png
+  artifactKey: Guid(da6a759ef8962124d815a335a1419a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples/Icon.png using Guid(da6a759ef8962124d815a335a1419a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de32296df9b4749233582a89614f9618') in 1.144982 seconds
+  Import took 1.152138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Microsoft.Maps.Unity.Examples/Icon_88x88.png
+  artifactKey: Guid(c0f5a1ab70e90f94ab870a1f2465fab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples/Icon_88x88.png using Guid(c0f5a1ab70e90f94ab870a1f2465fab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e1bb3680b73b4670e6c7abfb9516bd') in 0.010234 seconds
+  Import took 0.018541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001055 seconds.
+  path: Assets/Microsoft.Maps.Unity.Examples/MapServicesExample
+  artifactKey: Guid(5b02b7bb83e90ee4aa118e0421d6565b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples/MapServicesExample using Guid(5b02b7bb83e90ee4aa118e0421d6565b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a466474ce0163e544e97cecabc983d26') in 0.001371 seconds
+  Import took 0.011273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004363 seconds.
+  path: Assets/Microsoft.Maps.Unity.Examples
+  artifactKey: Guid(e7d48e32fba3495489da947b4d2862bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples using Guid(e7d48e32fba3495489da947b4d2862bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a165a363e51fa53ade54b1d88b94b2c') in 0.001965 seconds
+  Import took 0.011794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.933739 seconds.
+  path: Assets/Microsoft.Maps.Unity.Examples/MapServicesExample/Prefabs
+  artifactKey: Guid(1c512faf670478040a33aaa62260d483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples/MapServicesExample/Prefabs using Guid(1c512faf670478040a33aaa62260d483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c921dd2577a7e624cda0b49d4168138c') in 0.002812 seconds
+  Import took 0.034320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001154 seconds.
+  path: Assets/Microsoft.Maps.Unity.Examples/MapServicesExample/Prefabs/AddressMapPin.prefab
+  artifactKey: Guid(b24d189fc687e604ab8d8483f21af536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Microsoft.Maps.Unity.Examples/MapServicesExample/Prefabs/AddressMapPin.prefab using Guid(b24d189fc687e604ab8d8483f21af536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8421fb19c79cef5d112a378fedd2875') in 1.875869 seconds
+  Import took 1.881413 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
