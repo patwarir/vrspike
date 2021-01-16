@@ -27,6 +27,8 @@ EditorBuildSettings:
     path: Assets/Microsoft_APIs/Microsoft.Maps.Unity.Examples/MapPinExample/MapPinExample.unity
     guid: 04c6dce4c43d9cd47b3b974b0e1c4f4c
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 37ec77248b057441891d073929800d2d,
+      type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: a68f851ea77061e4bad16c4c303927ee,
       type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: e91db79e7a2fc4dbd9fca7d37baac325,
