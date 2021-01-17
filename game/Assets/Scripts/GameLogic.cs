@@ -4,56 +4,45 @@ using UnityEngine;
 using UnityEngine.XR;
 public class GameLogic : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject ball;
-    [SerializeField]
-    private GameObject ground;
 
+    //Game status Enum
     private enum GameStatus
     {
         IN_PLAY,
-        FINISHED,
-        SERVE
+        SERVE,
+        FINISHED
     }
+    //Current Game status
     private GameStatus CurrentGameStatus = GameStatus.SERVE;
-    private bool player1Serve = true;
-    private bool player1LastHit = true;
 
-    private int score1 = 0, score2 = 0;
-    private int hitNum1 = 0, hitNum2 = 0;
+    //List of joined player IDs
+    private List<string> playerIds = new List<string>();
 
+    //Called when the ball hits the ground
     void onBallHitGround()
     {
-        CurrentGameStatus = GameStatus.FINISHED;
+        CurrentGameStatus = GameStatus.SERVE;
         
-
     }
 
-    void setPlayer1LastHit()
+    /* Called when a player hits the ball. Pass in ID.
+     * @param string id : id of the player who hit the ball
+     * */
+    void onPlayerHit(string id)
     {
 
     }
-    void onPlayerHit()
-    {
-        if (player1LastHit)
-        {
-            hitNum1++;
-            if (hitNum1 > 3)
-            {
-                score2++;
-                CurrentGameStatus = GameStatus.SERVE;
-            }
-        }
-    }
 
+    /*
+     * Called when a player serves
+     * */
     void onPlayerServed()
     {
-        player1Serve = !player1Serve;
     }
 
     void Start()
     {
-        CurrentGameStatus = GameStatus.SERVE;
+        
     }
 
     void Update()
