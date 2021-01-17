@@ -5,6 +5,6 @@ COPY package*.json ./
 
 RUN npm install --only=production
 
-COPY . ./
+ADD . ./
 
 CMD [ "node", "server.js" ]
