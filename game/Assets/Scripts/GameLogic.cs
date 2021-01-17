@@ -43,6 +43,7 @@ public class GameLogic : MonoBehaviour
                 score2++;
                 CurrentGameStatus = GameStatus.SERVE;
             }
+        }
     }
 
     void onPlayerServed()
