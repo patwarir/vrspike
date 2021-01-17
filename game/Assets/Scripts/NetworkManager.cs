@@ -34,6 +34,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
+        ExitGames.Client.Photon.Hashtable userData = new ExitGames.Client.Photon.Hashtable();
+        userData.Add("uid", "123");
+        PhotonNetwork.LocalPlayer.SetCustomProperties(userData);
         Debug.Log("You joined a room");
         base.OnJoinedRoom();
     }
