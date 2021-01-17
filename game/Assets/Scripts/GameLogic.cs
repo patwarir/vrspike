@@ -8,6 +8,7 @@ public class GameLogic : MonoBehaviour
     private GameObject ball;
     [SerializeField]
     private GameObject ground;
+
     private enum GameStatus
     {
         IN_PLAY,
@@ -16,15 +17,34 @@ public class GameLogic : MonoBehaviour
     }
     private GameStatus CurrentGameStatus = GameStatus.SERVE;
     private bool player1Serve = true;
+    private bool player1LastHit = true;
+
     private int score1 = 0, score2 = 0;
-    //Called when the ball hits the ground
+    private int hitNum1 = 0, hitNum2 = 0;
+
     void onBallHitGround()
     {
         CurrentGameStatus = GameStatus.FINISHED;
+        
 
     }
 
-    //Called when a player has served
+    void setPlayer1LastHit()
+    {
+
+    }
+    void onPlayerHit()
+    {
+        if (player1LastHit)
+        {
+            hitNum1++;
+            if (hitNum1 > 3)
+            {
+                score2++;
+                CurrentGameStatus = GameStatus.SERVE;
+            }
+    }
+
     void onPlayerServed()
     {
         player1Serve = !player1Serve;
