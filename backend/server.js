@@ -29,12 +29,16 @@ async function getUsers() {
 
 async function addUser(username, passwordHash, salt) {
   const client = await pool.connect();
+  let uuid;
   try {
     const res = await client.query("INSERT INTO Users (username, password, salt) VALUES ($1, $2, $3)",
       [ username, passwordHash, salt ]);
+    const uuidResponse = await client.query("SELECT id FROM Users WHERE username = $1", [ username ]);
+    uuid = uuidResponse.rows[0].id;
   } finally {
     client.release();
   }
+  return uuid;
 }
 
 const crypto = require("crypto");
@@ -62,11 +66,12 @@ app.post("/create-user", (req, res) => {
   const salt = crypto.randomBytes(64).toString("base64");
   const hash = encrypt(password, salt);
 
-  addUser(username, hash, salt);
+  addUser(username, hash, salt).then((uuid) => {
+    console.log("Added user " + username + " at " + new Date().toISOString());
 
-  console.log("Added user " + username + " at " + new Date().toISOString());
-
-  res.sendStatus(200);
+    const token = jwt.sign({ username: username }, process.env.ACCESS_TOKEN_SECRET, { expiresIn: "2d" });
+    res.send({ uuid: uuid, token: token });
+  });
 });
 
 app.post("/login", (req, res) => {
