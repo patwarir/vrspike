@@ -862,8 +862,7 @@ GameObject:
   - component: {fileID: 5686134208185136530}
   - component: {fileID: 5686134208192617028}
   - component: {fileID: 4186216463907672407}
-  - component: {fileID: -6804655441878312189}
-  - component: {fileID: 2708164798056749135}
+  - component: {fileID: 5381894090405943358}
   m_Layer: 0
   m_Name: Custom Right Hand Model
   m_TagString: Untagged
@@ -922,33 +921,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!135 &-6804655441878312189
-SphereCollider:
+--- !u!65 &5381894090405943358
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5686134208185362930}
-  m_Material: {fileID: 13400000, guid: 52baaeb214519f347a35cf0edfd262ff, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!64 &2708164798056749135
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5686134208185362930}
-  m_Material: {fileID: 13400000, guid: 52baaeb214519f347a35cf0edfd262ff, type: 2}
+  m_Material: {fileID: 13400000, guid: 63d1c550633f4446690b80e40bd3ada8, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d0c255d07fd68f14b94e55d388e7e6bb, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.1484945, y: 0.09619673, z: 0.41585243}
+  m_Center: {x: 0.035350002, y: 0.03338428, z: 0.10212242}
 --- !u!1 &5686134208185362932
 GameObject:
   m_ObjectHideFlags: 0

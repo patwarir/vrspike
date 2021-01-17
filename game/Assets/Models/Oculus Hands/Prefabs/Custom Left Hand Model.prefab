@@ -320,7 +320,6 @@ GameObject:
   - component: {fileID: 109434732388006827}
   - component: {fileID: -7538887096606145841}
   - component: {fileID: -198152778199024407}
-  - component: {fileID: -7266782898974407929}
   m_Layer: 0
   m_Name: Custom Left Hand Model
   m_TagString: Untagged
@@ -386,26 +385,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109434732395284509}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.11777737, y: 0.10689499, z: 0.17810513}
-  m_Center: {x: -0.033888686, y: 0.027976632, z: 0.010947444}
---- !u!64 &-7266782898974407929
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109434732395284509}
-  m_Material: {fileID: 13400000, guid: 52baaeb214519f347a35cf0edfd262ff, type: 2}
+  m_Material: {fileID: 13400000, guid: 63d1c550633f4446690b80e40bd3ada8, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ca20b3907ff1c794cb89c1ad2cce8282, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.14849445, y: 0.08341262, z: 0.41017193}
+  m_Center: {x: -0.035351858, y: 0.035754453, z: 0.10533627}
 --- !u!1 &109434732395284511
 GameObject:
   m_ObjectHideFlags: 0
