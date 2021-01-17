@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class BallSpawner : MonoBehaviour
 {
-    public GameObject ball;
     [SerializeField]
-    private float respawnRate = 2.0f;
+    private GameObject ballPrefab;
     [SerializeField]
-    private float randomRange = 1f;
-    void Start()
-    {
-        StartCoroutine(spawner());
-    }
+    private float randomRange = 0.2f;
+
+    private GameObject ball;
 
     void createBall()
     {
-        GameObject a = Instantiate(ball) as GameObject;
+        ball = Instantiate(ballPrefab);
         float x_offset = Random.Range(-randomRange, randomRange);
         float z_offset = Random.Range(-randomRange, randomRange);
-        a.transform.position = new Vector3(transform.position.x + x_offset, transform.position.y, transform.position.z + z_offset);
+        ball.transform.position = new Vector3(transform.position.x + x_offset, transform.position.y, transform.position.z + z_offset);
     }
 
-    IEnumerator spawner()
+    private void Update()
     {
-        while (true)
+        if (!ball)
         {
-            yield return new WaitForSeconds(respawnRate);
             createBall();
         }
+        else
+        {
+            if (ball.transform.position.magnitude > 16)
+            {
+                Destroy(ball);
+                ball = null;
+            }
+        }
+        
     }
 }

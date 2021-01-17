@@ -8,7 +8,7 @@ Temp
 Build
 Library/
 obj/
-
+Logs/
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #

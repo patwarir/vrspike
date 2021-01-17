@@ -34,13 +34,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("Joined a Room");
+        Debug.Log("You joined a room");
         base.OnJoinedRoom();
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        Debug.Log("A new player joined the room");
+        Debug.Log("A new player joined the room here");
         base.OnPlayerEnteredRoom(newPlayer);
     }
 

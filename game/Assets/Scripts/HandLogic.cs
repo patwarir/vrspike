@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+//Not used anymore
 public class HandLogic : MonoBehaviour
 {
     //hand is colliding with this object
@@ -52,7 +53,7 @@ public class HandLogic : MonoBehaviour
     {
         inHand = collidingObject;
         if (!inHand) return;
-        inHand.transform.SetParent(this.transform);
+        inHand.transform.SetParent(transform);
         inHand.GetComponent<Rigidbody>().isKinematic = true;
     }
 
