@@ -27,7 +27,7 @@ public class BallSpawner : MonoBehaviour
         }
         else
         {
-            if (ball.transform.position.magnitude > 16)
+            if (ball.transform.position.magnitude > 12)
             {
                 Destroy(ball);
                 ball = null;
