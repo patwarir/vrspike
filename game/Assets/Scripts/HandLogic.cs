@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+//Not used anymore
 public class HandLogic : MonoBehaviour
 {
     //hand is colliding with this object
