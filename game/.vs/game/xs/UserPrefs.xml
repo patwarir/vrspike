@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GroundDetection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NetworkManager.cs">
     <Files>
       <File FileName="Assets/Scripts/Sample_Script.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/BallSpawner.cs" Line="27" Column="21" />
       <File FileName="Assets/Scripts/HandLogic.cs" Line="58" Column="1" />
-      <File FileName="Assets/Scripts/GameLogic.cs" Line="26" Column="19" />
-      <File FileName="Assets/Scripts/GroundDetection.cs" Line="18" Column="9" />
+      <File FileName="Assets/Scripts/GameLogic.cs" Line="46" Column="10" />
+      <File FileName="Assets/NetworkPlayer.cs" Line="30" Column="1" />
+      <File FileName="Assets/NetworkManager.cs" Line="45" Column="1" />
+      <File FileName="Assets/NetworkPlayerSpawner.cs" Line="14" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
