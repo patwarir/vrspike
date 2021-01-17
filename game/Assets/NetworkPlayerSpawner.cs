@@ -10,12 +10,14 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
+        Debug.Log("A new player joined the room");
         spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
     }
 
     public override void OnLeftRoom()
     {
         base.OnLeftRoom();
+        Debug.Log("Player left room");
         PhotonNetwork.Destroy(spawnedPlayerPrefab);
     }
 }
