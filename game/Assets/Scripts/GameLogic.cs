@@ -15,14 +15,30 @@ public class GameLogic : MonoBehaviour
     //Current Game status
     private GameStatus CurrentGameStatus = GameStatus.SERVE;
 
-    //List of joined player IDs
+    ////List of joined player IDs
     private List<string> playerIds = new List<string>();
+    private int serveIndex = 0;
+
+    //Scores of each player
+    private Dictionary<string, int> playersToScores = new Dictionary<string, int>();
+
+    //Current player
+    private string curPlayer;
+    private int curPlayerHitCount = 0;
+
+    //Add Player to game
+    void addPlayer(string id)
+    {
+        if (playerIds.Contains(id)) return;
+        playersToScores.Add(id, 0);
+        playerIds.Add(id);
+        playerIds.Sort();
+    }
 
     //Called when the ball hits the ground
     void onBallHitGround()
     {
-        CurrentGameStatus = GameStatus.SERVE;
-        
+        onCurPlayerLost();
     }
 
     /* Called when a player hits the ball. Pass in ID.
@@ -30,7 +46,13 @@ public class GameLogic : MonoBehaviour
      * */
     void onPlayerHit(string id)
     {
-
+        if (curPlayer != id)
+        {
+            curPlayerHitCount = 1;
+            curPlayer = id;
+        }
+        else if (curPlayerHitCount > 3) onCurPlayerLost();
+        else curPlayerHitCount++;
     }
 
     /*
@@ -38,11 +60,14 @@ public class GameLogic : MonoBehaviour
      * */
     void onPlayerServed()
     {
+        serveIndex = (serveIndex + 1) % playerIds.Count;
     }
 
-    void Start()
+    //Called when current player loses
+    private void onCurPlayerLost()
     {
-        
+        CurrentGameStatus = GameStatus.SERVE;
+        playersToScores[curPlayer]--;
     }
 
     void Update()
