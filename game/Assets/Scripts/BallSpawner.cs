@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+
 
 public class BallSpawner : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class BallSpawner : MonoBehaviour
 
     void createBall()
     {
-        ball = Instantiate(ballPrefab);
+        ball = PhotonNetwork.Instantiate("Ball", transform.position, transform.rotation);
         float x_offset = Random.Range(-randomRange, randomRange);
         float z_offset = Random.Range(-randomRange, randomRange);
         ball.transform.position = new Vector3(transform.position.x + x_offset, transform.position.y, transform.position.z + z_offset);
